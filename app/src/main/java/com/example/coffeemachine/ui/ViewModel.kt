@@ -87,6 +87,7 @@ class ViewModel @Inject constructor(
 
     fun exitWithoutSaving() {
         coffeeUiStateFlow.value = coffeeToUiState(coffee)
+        isCanSave = false
     }
 
     private fun checkIfCanSave() {
